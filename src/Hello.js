@@ -1,10 +1,6 @@
 
 
-import {  useState } from "react";
-
-
-export default function HelloWorld(props) {
-  
+export default function HelloWorld() {
 	
   return (
     <div className="App">	
