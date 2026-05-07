@@ -1,6 +1,6 @@
 
 import './App.css';
-import KendoGrid from './Kendo';
+import HelloWorld from './Hello';
 import { useEffect, useState } from "react";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
 			
   return (
     <div className="App">
-     <KendoGrid data={users}/>
-
+     
+<HelloWorld />
     </div>
   );
 }
