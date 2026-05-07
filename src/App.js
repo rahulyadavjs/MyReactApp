@@ -1,18 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Test from './test1';
 import KendoGrid from './Kendo';
 import { useEffect, useState } from "react";
 
 function App() {
-	var model=[{
-		Id:1,
-		Name:"Rahul"	
-	},
-	{
-		Id:2,
-		Name:"Ashish"
-	}];
+	
 	  const [users, setUsers] = useState([]);
 
     useEffect(() => {
