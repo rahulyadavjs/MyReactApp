@@ -4,7 +4,7 @@ export default function HelloWorld() {
 	
   return (
     <div className="App">	
-	Hello Rahul Yadav lates
+	Hello Rahul Yadav 
     </div>
 	
   );

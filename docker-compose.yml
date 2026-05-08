@@ -1,7 +1,7 @@
 services:
 
   react-app:
-    image: rahultech8/myreactapp:7
+    image: rahultech8/myreactapp:latest
     container_name: myreactcontainer
 
     ports:
