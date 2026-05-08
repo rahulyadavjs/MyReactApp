@@ -23,7 +23,11 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t rahultech8/myreactapp:${{ github.run_number }} .
+        run: |
+    docker build -t rahultech8/myreactapp:${{ github.run_number }} .
+    docker tag rahultech8/myreactapp:${{ github.run_number }} rahultech8/myreactapp:latest
 
       - name: Push Docker Image
-        run: docker push rahultech8/myreactapp:${{ github.run_number }}
+       run: |
+    docker push rahultech8/myreactapp:${{ github.run_number }}
+    docker push rahultech8/myreactapp:latest
