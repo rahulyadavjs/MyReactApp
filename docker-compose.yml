@@ -1,0 +1,10 @@
+services:
+
+  react-app:
+    image: rahultech8/myreactapp:v1
+    container_name: myreactcontainer
+
+    ports:
+      - "5001:80"
+
+    restart: always
