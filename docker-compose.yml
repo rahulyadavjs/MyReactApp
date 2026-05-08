@@ -1,21 +1,17 @@
 services:
-
   react-app:
     image: rahultech8/myreactapp:latest
     container_name: myreactcontainer
-
     ports:
       - "5001:80"
-
     restart: always
-    
-  watchtower:
-    image: containrrr/watchtower
-    container_name: watchtower
 
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    environment:
+      - DOCKER_API_VERSION=1.54
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-
-    command: --interval 30
-
+    command: --interval 30 --cleanup
     restart: always
