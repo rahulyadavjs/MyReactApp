@@ -2,7 +2,7 @@
   "name": "test_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rahulyadavjs.github.io/MyReactApp",
+
   "dependencies": {
     "@progress/kendo-data-query": "^1.7.4",
     "@progress/kendo-react-grid": "^14.4.0",
